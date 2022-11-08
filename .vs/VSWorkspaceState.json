@@ -5,6 +5,6 @@
     "\\hello-csharp\\Calculator",
     "\\hello-csharp\\Calculator.Tests"
   ],
-  "SelectedNode": "\\hello-csharp\\testing.sln",
+  "SelectedNode": "\\hello-csharp\\Calculator.Tests\\CalculatorTest.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -24,13 +24,13 @@ namespace Calculator.Tests
         [Fact]
         public void TestSubtractFourFromSixIsTwo()
         {
-            // Given
+            // Arrange
             int a = 6;
             int b = 4;
             int expected = 2;
             Calculator calculator = new Calculator();
 
-            // When
+            // Act
             int actual = calculator.Subtract(a, b);
 
             // Then
@@ -39,18 +39,18 @@ namespace Calculator.Tests
 
 
        [Fact]
-        public void TestMultiplikationFourTimesTwoIsEight()
+        public void TestMultiplicationFourTimesTwoIsEight()
         {
-            // Given
+            // Arrange
             int a = 2;
             int b = 4;
             int expected = 8;
             Calculator calculator = new Calculator();
 
-           // When
+            // Act
             int actual = calculator.Multiply(a, b);
 
-           // Then
+            // Assert
             Assert.Equal(expected, actual);
         }
 
@@ -59,16 +59,16 @@ namespace Calculator.Tests
        [Fact]
         public void TestDevideFourTimesTwoIsTwo()
         {
-            // Given
+            // Arrange
             int a = 4;
             int b = 2;
             int expected = 2;
             Calculator calculator = new Calculator();
 
-           // When
+            // Act
             int actual = calculator.Devide(a, b);
 
-           // Then
+            // Assert
             Assert.Equal(expected, actual);
         }
 
@@ -77,16 +77,13 @@ namespace Calculator.Tests
        [Fact]
         public void TestDevideFourTimesZeroIsExeption()
         {
-            // Given
+            // Arrange
             int a = 4;
             int b = 0;
             int expected = 2;
             Calculator calculator = new Calculator();
 
-           // When
-            int actual = 0;
-
-           // Then
+            // Assert
             Assert.Throws<ArgumentException>(() =>
                 actual = calculator.Divide(a, b)
            );
